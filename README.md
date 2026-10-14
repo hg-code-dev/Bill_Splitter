@@ -13,39 +13,29 @@ A Python program designed to calculate and split a restaurant bill evenly among 
 Here is the Python code used for this project:
 
 ```python
-running_total = 0  # Storing an integer in a variable
+running_total = 0 #Storing an integer in variable 
 
-num_of_friends = 4  # Storing the amount of people as an integer in a variable
+num_of_friends = 4 # Storing the amount of people as integer in variable 
 
-appetizers = 37.89  # Storing the price of items as a float in a variable
-main_courses = 57.34  # Storing the price of items as a float in a variable
-desserts = 39.39  # Storing the price of items as a float in a variable
-drinks = 64.21  # Storing the price of items as a float in a variable
+appetizers = 37.89 #Storing the price of items as a float in variable 
+main_courses = 57.34 #Storing the price of items as a float in variable 
+desserts = 39.39 #Storing the price of items as a float in variable 
+drinks = 64.21 #Storing the price of items as a float in variable 
 
-running_total += (
-    appetizers + main_courses + desserts + drinks
-)  # Storing the result of augmented assignment of all the meal items combined in a variable
-print("Total bill so far:", running_total)  # output: Total of bill so far
+running_total += appetizers + main_courses + desserts + drinks # Storing the result of augmented assignment  of all meal items combined in variable 
+print('Total bill so far:', running_total) #Output: Total of bill so far 
 
-tip = (
-    running_total * 0.25
-)  # Storing the result of multiplication to add tip to running total in a variable
-print("Tip amount:", tip)  # output: Total tip amount
+tip = running_total * 0.25 #Storing the result of multiplication add tip to running total in variable 
+print('Tip amount:', tip) #Output: Total tip amount  
 
-running_total += (
-    tip
-)  # Storing the result of augmented assignment of tip amount in a variable
-print("Total with tip:", running_total)  # output: Total of bill including the tip amount
+running_total += tip # Storing the result of augmented assignment in variable 
+print('Total with tip:', running_total) #output: Total bill including the tip amount 
 
-final_bill = (
-    running_total / num_of_friends
-)  # Storing the result of dividing the running total by number of people in a variable
-print("Bill per person:", final_bill)  # output: Bill amount for each person
+final_bill = running_total / num_of_friends # Storing the result of dividing the running total by number of people in variable 
+print('Bill per person:', final_bill) #Output: Bill amount per person 
 
-each_pays = round(
-    final_bill, 2
-)  # Storing the result of rounding the final bill for each person by 2 decimal places in a variable
-print(f"Each person pays: {each_pays}")  # output: Total each person pays rounded to 2 decimal places
+each_pays = round(final_bill, 2) #Storing the result of rounding the final bill per person by 2 decimal places in variable 
+print(f'Each person pays: {each_pays}')# output:The total per person rounded to 2 decimal places 
 
 ## 💻 How to run
 1. Ensure you have python installed on your system
